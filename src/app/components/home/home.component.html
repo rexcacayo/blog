@@ -1,0 +1,17 @@
+<div class="card-group" >
+  <div class="card" *ngFor="let post of total; let i = index">
+    <img class="card-img-top" src="{{post.imagen}}" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">{{ post.nombre}}</h4>
+      <p class="card-text">{{post.texto}}</p>
+      <p class="card-text">
+        <small class="text-muted">Hora: {{post.hora}}</small><br>
+        <small class="text-muted">Autor: {{post.autor}}</small><br>
+        <small class="text-muted">Cantidad:{{ post.cant }}</small><br>
+        <button type="button" name="button" (click)="verPost(post.id)" class="btn btn-outline-primary col-md-offset-3">
+            Comentarios
+        </button>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.top-30{
+  padding-top: 30px;
+}
+
+img{
+  width: 50%;
+  height: auto;
+}
+
+.widthimg{
+  width: 10%;
+}

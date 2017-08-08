@@ -1,0 +1,17 @@
+<div class="card-deck">
+  <div class="card">
+    <img class="card-img-top widthimg" src="{{post.imagen}}" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">{{ post.nombre}}</h4>
+      <p class="card-text">{{post.texto}}</p>
+    </div>
+    <div class="card-footer" *ngFor="let comentario of comentarios; let i = index">
+      <small class="text-muted"><h4>{{comentario.mensaje}}</h4></small>
+      <small class="text-muted"><h4>Autor: {{comentario.escritor}}</h4></small>
+      <br>
+
+    </div>
+
+  </div>
+
+</div>
